@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  border: none;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+  background-attachment: fixed;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+  list-style: none;
+}
+
+menu,
+ol,
+ul {
+  padding-left: 0;
+}
+
+article ol,
+article ul {
+  list-style-position: inside;
+}
+
+a {
+  text-underline-position: under;
+  text-decoration-thickness: 8;
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+body {
+    margin: 0 0 0 0;
+    padding: 0;
+    background: #FAFAFA;
+}
+
+.content-container {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "article"
+        "footer";
+    grid-auto-rows: min-content;
+    grid-template-columns: 1;
+    overflow-x: hidden;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#pageHeader {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 48px;
+    position: relative;
+}
+
+.header-logo {
+    margin-left: 128px;
+    margin-right: 128px;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+
+.hero-image {
+    display: block;
+    max-width: 110%;
+    margin-right: 100px;
+    left: -20px;
+    top: 85px;
+    z-index: 1;
+    position: absolute;
+}
+
+h1 {
+    color: #28283D;
+    font-size: 4.6rem;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    line-height: 44px;
+    margin: 200px 24px 24px 24px;
+}
+
+.desc {
+    color: #878795;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.6rem; 
+    text-align: center;
+    margin: 0 24px 32px 24px;
+}
+
+.btn {
+    border-radius: 29px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 2.6rem;
+    color: #FFFFFF;
+}
+
+.btn-download {
+    width: 193px;
+    height: 58px;
+    margin: 0 91px 16px 91px;
+    background-color: #4D96A9;
+}
+
+.version {
+    color: #8FE3F9;
+}
+
+.btn-header-sml {
+    width: 139px;
+    height: 58px;
+    background-color: #855FB1;
+    margin: 0 118px 64px 118px;
+}
+
+#pageArticle {
+    grid-area: article;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.num-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.vl {
+    border-left: 1px solid #87879D;
+    opacity: 0.25;
+    height: 84px;
+}
+
+.num-bullet {
+    color: #87879D;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 2.6rem;
+    border: 1px solid rgba(134, 135, 157, 0.25);
+    border-radius: 29px;
+    width: 56px;
+    height: 56px;
+    padding: 15px 15px 15px 19px;
+}
+
+.photo-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 2.5rem 2.5rem;
+    margin-bottom: 50px;
+}
+
+.photo {
+    width: 151px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#pageFooter {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: url(/assets/mobile/image-footer.jpg) no-repeat center;
+
+    background-size: contain;
+}
+
+h3 {
+    color: #4D96A9;
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 2.6rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin: 0 auto 0 auto
+}
+
+h2 {
+    color: #28283D;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 900;
+    line-height: 3.6rem;
+    margin: 24px 24px 32px 24px;
+}
+
+.article-desc {
+    color: #87879D;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    margin: 0 24px 64px 24px;
+}
+
