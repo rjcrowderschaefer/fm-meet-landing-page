@@ -97,6 +97,18 @@ body {
     position: absolute;
 }
 
+.hero-image-tablet {
+    display: none;
+}
+
+.hero-image-desktop-left {
+    display: none;
+}
+
+.hero-image-desktop-right {
+    display: none;
+}
+
 h1 {
     color: #28283D;
     font-size: 4.6rem;
@@ -108,7 +120,7 @@ h1 {
 }
 
 .desc {
-    color: #878795;
+    color: #87879D;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.6rem; 
@@ -278,4 +290,56 @@ h4 {
 
 #pageFooter .version {
     color: #D9B8FF;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .header-logo {
+        margin: 0 324.5px 0 324.5px;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-image-tablet {
+        display: block;
+        max-width: 100%;
+        margin-top: 50px;
+        position: absolute;
+        left: -25px;
+        top: 45px;
+    }
+
+    h1 {
+        font-size: 4.8rem;
+        line-height: 48px;
+        margin: 440px 215px 24px 214px;
+        width: 339px;
+    }
+
+    .desc {
+        width: 457px;
+        margin-left: 155px;
+        margin-right: 156px;
+        margin-bottom: 32px;
+    }
+
+    .btn-header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 210px;
+        margin-right: 210px;
+    }
+
+    .btn-download {
+        margin-right: 16px;
+        margin-left: 0px;
+    }
+
+    .btn-header-sml {
+        margin-left: 0px;
+    }
+
 }
