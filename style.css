@@ -148,6 +148,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    margin-bottom: 150px;
 }
 
 .num-container {
@@ -182,7 +183,7 @@ h1 {
     flex-flow: row wrap;
     justify-content: center;
     gap: 2.5rem 2.5rem;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .photo {
@@ -193,29 +194,37 @@ h1 {
 
 #cont-02 {
     position: absolute;
-    /* background-color: red; */
     left: 159px;
-    bottom: -87px;
-    z-index: 5;
+    bottom: -240px;
+    z-index: 2;
 }
 
 .num-02 {
     padding: 15px 15px 15px 17.5px;
 }
 
-
-
 #pageFooter {
     grid-area: footer;
     display: flex;
     flex-direction: column;
     position: relative;
-    /* background: url(/assets/mobile/image-footer.jpg) no-repeat center;
-    background-size: contain; */
     background-color: #4D96A9;
     height: 428px;
     width: auto;
+    z-index: 1;
+}
 
+#pageFooter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(/assets/mobile/image-footer.jpg) no-repeat center;
+    background-size: contain;
+    opacity: 0.1045;
+    z-index: -1;
 }
 
 h3 {
@@ -234,7 +243,7 @@ h2 {
     font-size: 3.2rem;
     font-weight: 900;
     line-height: 3.6rem;
-    margin: 24px 24px 32px 24px;
+    margin: 24px 24px;
 }
 
 .article-desc {
@@ -243,7 +252,7 @@ h2 {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.6rem;
-    margin: 0 24px 64px 24px;
+    margin: 0 27px 32px 27px;
 }
 
 
@@ -263,7 +272,8 @@ h4 {
 }
 
 .btn-footer-lrg {
-    background-color: #855FB1;
+    background-color: rgba(133, 95, 177, 1);
+    margin-top: 15px;
 }
 
 #pageFooter .version {
