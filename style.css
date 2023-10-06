@@ -65,9 +65,7 @@ body {
         "page-intro"
         "article"
         "footer";
-    grid-auto-rows: min-content;
-    overflow-x: hidden;
-    grid-template-columns: 1;
+    grid-auto-rows: min-content;    grid-template-columns: 1;
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -83,7 +81,7 @@ body {
     margin-top: 48px;
 }
 
-#pageHero {
+.hero {
     grid-area: hero;
 }
 
@@ -228,7 +226,6 @@ h1 {
     grid-area: footer;
     display: flex;
     position: relative;
-    /* flex-direction: column; */
     justify-content: center;
     background-color: #4D96A9;
     height: 428px;
@@ -302,7 +299,7 @@ h4 {
     color: #D9B8FF;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px)  {
     
     #pageHeader {
         max-width: 100vw;
@@ -321,8 +318,6 @@ h4 {
     .hero-image-tablet {
         display: block;
         max-width: 100%;
-        /* margin-top: 50px; */
-        /* position: absolute; */
         margin-left: -28px;
     }
 
@@ -415,7 +410,92 @@ h4 {
     .btn-footer-lrg {
         margin-left: 287.5px;
         margin-right: 287.5px;
+    }
+}
 
+@media only screen and (min-width: 1440px) {
+
+    .content-container {
+        display: grid;
+        grid-template-areas: 
+            ". header ."
+            "desktop-left page-intro desktop-right"
+            "article article article"
+            "footer footer footer";
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: repeat(4, 1fr);
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+
+    }
+    
+    #pageHeader {
+        grid-area: header;
+        margin-bottom: 116px;
+    }
+
+    .header-logo {
+        margin: 0;
+    }
+
+    .desktop-left {
+        grid-area: desktop-left;
+    }
+    
+    .pageIntro {
+        grid-area: page-intro;
+    }
+
+    .desktop-right {
+        grid-area: desktop-right;
+
+    }
+
+    #pageArticle {
+        grid-area: article;
+    }
+
+    #pageFooter {
+        grid-area: footer;
+    }
+
+    .hero-image {
+        display: none;
+    }
+
+    .hero-image-tablet {
+        display: none;
+    }
+
+    .hero-image-desktop-right {
+        display: inline-block;
+        margin-left: 110px;
+        margin-top: 32px;
+    }
+
+    .hero-image-desktop-left {
+        display: inline-block;
+        margin-left: -30px;
+        margin-top: -23px;
+    }
+
+    h1 {
+        font-size: 6.4rem;
+        line-height: 6.4rem;
+        margin: 0px 10px 34px 10px;
+    }
+
+    .desc {
+        font-size: 1.8rem;
+        margin: 0 -21px 32px -21px;
+    }
+
+    
+    .btn-header-container {
+        /* display: flex; */
+        /* flex-direction: row; */
+        justify-content: center;
     }
 
 }
