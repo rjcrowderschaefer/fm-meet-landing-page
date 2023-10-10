@@ -46,53 +46,49 @@ I used a mobile first approach to develop this process, beginning with the mobil
 
 ### What I learned
 
-This project was surprisingly challenging when it came to working with the various grid components. I especially had trouble 
+This project was surprisingly challenging when it came to working with the various grid components. I especially had trouble implementing flexbox to center and align elements similar to what I've done with previous projects. I was able to resolve the issues for some of the grid areas and implemented margin spacing for other elements as necessary. This project also allowed me to practice working with the CSS `background` property to include an image, including how to manipulate the image to cover the entire element using CSS.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="num-container" id="cont-02">
+          <div class="vl"></div>
+          <div class="num-bullet num-02">02</div>
+        </div>
 ```
+<!-- I worked through how to include a vertical line as a part of building the number element -->
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.num-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.vl {
+  border-left: 1px solid #87879d;
+  opacity: 0.25;
+  height: 84px;
+}
+
+.num-bullet {
+  color: #87879d;
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 2.6rem;
+  border: 1px solid rgba(134, 135, 157, 0.25);
+  border-radius: 29px;
+  width: 56px;
+  height: 56px;
+  padding: 15px 15px 15px 19px;
+  background-color: #fafafa;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+<!-- The corresponding CSS that I implemented to achieve the vertical line and circle for the number container -->
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- LinkedIn - [RJ Crowder-Schaefer](https://www.linkedin.com/in/rjcrowderschaefer/)
+- Frontend Mentor - [@rjcrowderschaefer](https://www.frontendmentor.io/profile/rjcrowderschaefer)
+- GitHub - [@rjcrowderschaefer](https://github.com/rjcrowderschaefer)
